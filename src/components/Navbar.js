@@ -1,8 +1,6 @@
 import React from "react";
 import logo from "../logo.png";
-import FontAwesome from "react-fontawesome";
-import { faBars } from "react-fontawesome";
-import { FontAwesomeIcon } from "react-fontawesome";
+
 
 const Navbar = () => {
   return (
@@ -19,7 +17,7 @@ const Navbar = () => {
           aria-controls='navbarSupportedContent'
           aria-expanded='false'
           aria-label='Toggle navigation'
-          color="primary"
+          
         >
           <span className='navbar-toggler-icon'></span>
         </button>
