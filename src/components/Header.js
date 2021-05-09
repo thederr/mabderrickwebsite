@@ -13,7 +13,6 @@ const Header = () => {
             "Google Ads",
             "Google Data Analytics",
             "EVERY",
-            "GOD",
             "DAMN",
             "DAY",
             "Mediocre At Best Technologies LLC",
