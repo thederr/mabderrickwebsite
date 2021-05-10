@@ -9,7 +9,7 @@
 }
 
 body{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif !important;
 
 }
 
@@ -140,4 +140,17 @@ transition: .2s ease-in-out ;
   .particles-canvas{
     display:none;
   }
+}
+
+/* ABOUT ME */
+.profile-img{
+  width:16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-orange);
+}
+
+.about-heading{
+  color: var(--primary-orange);
+  text-transform: uppercase;
 }
