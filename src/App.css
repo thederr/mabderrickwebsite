@@ -1,156 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-:root{
+:root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
 
-body{
-  font-family: 'Oswald', sans-serif !important;
-
+body {
+  font-family: "Oswald", sans-serif !important;
 }
-
 
 /* NAVBAR */
-nav{
-  z-index:2;
+nav {
+  z-index: 2;
 }
-.logo{
-  width:16.25rem;
+.logo {
+  width: 16.25rem;
 }
 
 /* LINKS */
-nav a.nav-link{
+nav a.nav-link {
   /* font-weight:500; */
   letter-spacing: 0.0375rem;
-  cursor:pointer;
-  font-size: .8rem;
+  cursor: pointer;
+  font-size: 0.8rem;
 }
 
-nav ul li{
+nav ul li {
   text-transform: uppercase;
 }
 
-.navbar-nav >li >a {
-  margin-right:0.75rem;
-  margin-left:0.75rem;
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
   color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-dark);
-
 }
 
-.navbar-brand{
-  max-width:17.25rem;
+.navbar-brand {
+  max-width: 17.25rem;
   /* padding:0; */
   height: 6rem;
 }
-@media screen and (max-width:786px) {
-  .navbar-brand{
-    width:7rem;
+@media screen and (max-width: 786px) {
+  .navbar-brand {
+    width: 7rem;
   }
-  .logo{
-    height:100%;
+  .logo {
+    height: 100%;
   }
 }
 
-.navbar-nav >li >a.active, .navbar-nav >li >a.active:focus{
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
-
 }
-.navbar-nav>li>a:hover{
+.navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
-
 }
 /* HEADER */
-.header-wrapper{
+.header-wrapper {
   position: relative;
   background: url("wall-and-laptop-background.jpg");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   height: 90vh;
 }
-.main-info{
+.main-info {
   display: flex;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   position: absolute;
-  z-index:1;
-
+  z-index: 1;
 }
 
 .main-info h1 {
-  color:var(--primary-orange);
+  color: var(--primary-orange);
   text-transform: uppercase;
 }
 
 /* TYPED-TEXT */
 
-.typed-text{
+.typed-text {
   font-size: 2rem;
-  color:var(--primary-white);
+  color: var(--primary-white);
 }
 
- @media screen and (max-width:786px) {
+@media screen and (max-width: 786px) {
   .main-info h1 {
     font-size: 1.7rem;
-  } 
-  .typed-text{
+  }
+  .typed-text {
     font-size: 1.3rem;
   }
 }
 
 /* HEADER MAIN OFFER BUTTON */
 .btn-main {
-  border:1px solid var(--primary-red);
+  border: 1px solid var(--primary-red);
   text-transform: uppercase;
   border-radius: 0;
   padding: 1rem;
-  color:var(--primary-white);
+  color: var(--primary-white);
   margin: 2rem;
 }
 .btn-main-offer:hover {
-text-decoration: none;
-background-color: var(--primary-hover-red);
-color:var(--primary-white);
-transition: .2s ease-in-out ;
-
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
 }
 
 /* REACT PARTICLES */
 
-.tsparticles-canvas-el{
+.tsparticles-canvas-el {
   position: absolute;
-  height:100vh;
-  width:100vh;
-  z-index:1; 
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
   /* z-index of 1 lets the particles sit on top of the site */
 }
 
-@media(max-width: 768px){
-  .particles-canvas{
-    display:none;
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
   }
 }
 
 /* ABOUT ME */
-.profile-img{
-  width:16rem;
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 16rem;
   border-radius: 50%;
-  padding: .3rem;
+  padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }
 
-.about-heading{
+.about-heading {
   color: var(--primary-orange);
   text-transform: uppercase;
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
 }

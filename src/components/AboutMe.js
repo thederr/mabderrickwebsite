@@ -1,11 +1,11 @@
 import React from "react";
-import author from "./summit-of-spruce-knob.jpg";
+import author from "./derrick.png";
 const AboutMe = () => {
   return (
     <div className='container py-5'>
       <div className='row'>
         <div className='col-lg col-xm-12'>
-          <div className='photo-wrap'>
+          <div className='photo-wrap mb-5'>
             <img className="profile-img" src={author} alt='author' />
           </div>
         </div>
