@@ -11,10 +11,10 @@ const Header = () => {
             "Web Design",
             "Web Development",
             "Google Ads",
-            "Google Data Analytics",
-            "EVERY",
-            "DAMN",
-            "DAY",
+            "Google Analytics",
+            "Google Data Studio",
+            "AutoCAD Drafting",
+            "I'm not the best there is, but I'm not the worst",
             "Mediocre At Best Technologies LLC",
           ]}
           typeSpeed={40}
