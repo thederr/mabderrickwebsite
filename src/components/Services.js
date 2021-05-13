@@ -1,13 +1,20 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faDesktop, faDraftingCompass, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import { faAws } from "@fortawesome/free-brands-svg-icons";
 
 function Services() {
   return (
     <div className='services'>
-      <h1 className='py-5'>
+      <div className='py-5'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-3 col-sm-6'>
               <div className='box'>
+                <div className='circle'>
+                  <FontAwesomeIcon icon={faFileCode} size='2x' />
+                </div>
+
                 <h3>Web Development</h3>
                 <p>
                   Utilizing the latest technologies: a Reactjs with Firebase and
@@ -19,6 +26,9 @@ function Services() {
             {/*-*/}
             <div className='col-md-3 col-sm-6'>
               <div className='box'>
+              <div className='circle'>
+                  <FontAwesomeIcon icon={faDesktop} size='2x' />
+                </div>
                 <h3>Web Design</h3>
                 <p>
                   Working with Bootstrap, Material-UI, FontAwesome and the like,
@@ -31,6 +41,23 @@ function Services() {
             {/*-*/}
             <div className='col-md-3 col-sm-6'>
               <div className='box'>
+              <div className='circle'>
+                  <FontAwesomeIcon icon={faAws} size='2x' />
+                </div>
+                <h3>AWS Migration</h3>
+                <p>
+                  Working with small to medium sized companies offloading costly
+                  infastrcture and replacing inhouse servers with serverless
+                  archtecture from Amazon.
+                </p>
+              </div>
+            </div>
+            {/*-*/}
+            <div className='col-md-3 col-sm-6'>
+              <div className='box'>
+              <div className='circle'>
+                  <FontAwesomeIcon icon={faDraftingCompass} size='2x' />
+                </div>
                 <h3>AutoCAD Modeling</h3>
                 <p>
                   Freelance AutoCAD servces are avalible upon request. Here are
@@ -40,9 +67,28 @@ function Services() {
             </div>
           </div>
         </div>
-      </h1>
+      </div>
     </div>
   );
 }
 
 export default Services;
+
+{
+  /* Heres Some Example FontAwesome Syntax
+
+
+// Light:
+<FontAwesomeIcon icon={["fal", "coffee"]} />
+// Regular:
+<FontAwesomeIcon icon={["far", "coffee"]} />
+// Solid
+<FontAwesomeIcon icon={["fas", "coffee"]} />
+// ...or, omit as FontAwesome defaults to solid, so no need to prefix:
+<FontAwesomeIcon icon="coffee" />
+// Brand:
+<FontAwesomeIcon icon={["fab", "github"]} />
+
+https://fontawesome.com/how-to-use/on-the-web/using-with/react
+*/
+}

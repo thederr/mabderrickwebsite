@@ -10,7 +10,7 @@ const Header = () => {
           strings={[
             "Web Design",
             "Web Development",
-            "Google Ads",
+            "Google Sheets Reports",
             "Google Analytics",
             "Google Data Studio",
             "AutoCAD Drafting",
