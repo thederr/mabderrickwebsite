@@ -386,3 +386,33 @@ nav ul li {
 .hyper-link:hover {
   color: var(--primary-red);
 }
+
+/* OVERFLOW BOX MEDIA */
+
+
+  @media(max-width:768px){
+    .portfolio-image-popupbox{
+      width:100%;
+    }
+  }
+
+@media(max-height:570px){
+  .portfolio-wrapper {
+    height: 100% !important;
+  }
+}
+
+.portfolio-image-popupbox {
+  width:50%;
+}
+
+/*---------*/
+@media(max-height:280px){
+  .portfolio-wrapper {
+    height: 90% !important;
+  }
+}
+
+.portfolio-image-popupbox {
+  width:30%;
+}
