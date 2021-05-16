@@ -45,7 +45,7 @@ const Experience = () => {
           <div className="marker"></div>
           <div className="timeline-content">
             <h3>April 2021</h3>
-            <p>Built an Instagram Clone using Reactjs and Firebase, deployed using Firebase</p>
+            <p>Finished Linkedin Node.js Essential Training + Built an Instagram Clone using Reactjs and Firebase, deployed using Firebase</p>
           </div>
         </div>
         {/* - */}
