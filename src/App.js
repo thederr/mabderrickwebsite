@@ -4,11 +4,8 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Particles from "react-particles-js";
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 import Services from "./components/Services";
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {FontAwesome} from '@fortawesome/react-fontawesome';
-import {faCheckSquare, FaCoffee} from '@fortawesome/free-solid-svg-icons';
-
 
 
 function App() {
@@ -39,6 +36,7 @@ function App() {
       <Header/>
       <AboutMe/>
       <Services/>
+      <Experience/>
     </>
   );
 }
