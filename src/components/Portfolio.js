@@ -76,7 +76,7 @@ const Portfolio = () => {
   return (
     <div className='portfolio-wrapper'>
       <div className='container'>
-        <h1 className='text-uppercase text-center py-5'></h1>
+        <h1 className='text-uppercase text-center py-5'>portfolio</h1>
         <div className='image-box-wrapper row justify-content-center'>
           {/*Netflix*/}
           <div className='portfolio-image-box' onClick={openPopupboxNetflix}>
