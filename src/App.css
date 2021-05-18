@@ -459,6 +459,7 @@ nav ul li {
 .carousel .slide{
   background:transparent !important;
   height: 100%;
+  padding: top 2remS ;
 }
 .carousel .slide img{
   width: 10rem !important;
@@ -469,10 +470,27 @@ nav ul li {
   color:var(--primary-orange);
   font-weight: 500;
   text-transform: uppercase;
-  
+
 }
  
 .carousel-root {
   margin: auto !important;
   margin-top: 3% !important;
+}
+
+/* CONTACT ME */
+.contacts{
+  background:var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1{
+  color:var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+color:var(--primary-light-grey);
+font-size: 1.2rem;
 }
