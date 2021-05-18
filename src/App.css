@@ -10,6 +10,7 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-black: #000000;
+  --primary-transarent-black:rgba(0,0,0,0.7);
 }
 
 body {
@@ -418,3 +419,60 @@ nav ul li {
 }
 
 /* TESTIMONIALS */
+
+.testimonials {
+  background-image: url(C:\Users\mathe\Desktop\mabderrickwebsite\src\components\testimonials-bg.jpg);
+  background-size: cover;
+  background-color: var(--primary-black);
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width:100%
+}
+.testimonials h1 {
+  color:var(--primary-orange);
+  padding:3rem 0;
+  text-transform: uppercase;
+}
+
+
+.testimonials-content {
+  text-align: center;
+  max-width: 53.25rem;
+  margin:0 auto 2rem auto;
+  background: var(--primary-transarent-black) ;
+}
+
+.mycarousel {
+  color: var(--primary-grey);
+  background: transparent;
+  margin-top:-6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 8% ;
+  padding-left: 5%;
+  padding-right: 5%;
+  height:17.875rem;
+}
+
+.carousel .slide{
+  background:transparent !important;
+  height: 100%;
+}
+.carousel .slide img{
+  width: 10rem !important;
+  border-radius: 50%;
+}
+
+.mycarousel h3{
+  color:var(--primary-orange);
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+ 
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
