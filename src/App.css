@@ -494,3 +494,27 @@ nav ul li {
 color:var(--primary-light-grey);
 font-size: 1.2rem;
 }
+
+.contacts input, .contacts textarea {
+width:100%;
+box-sizing: border-box;
+background: none;
+resize: none;
+border: 0;
+border-bottom: 0.125rem solid var(--primary-dark-grey);
+border-radius: 0;
+color: var(--primary-orange); /*i want the text to be orange but its not working probably spelled something wrong or its in the wrong div wrapper */
+outline: 0 !important;
+box-shadow: none !important;
+top:0;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color:var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
