@@ -509,6 +509,9 @@ box-shadow: none !important;
 top:0;
 }
 
+.input *{
+  color: var(--primary-orange); /*i want the text to be orange but its not working probably spelled something wrong or its in the wrong div wrapper */
+}
 .contacts .container {
   padding: 4rem 0;
 }
