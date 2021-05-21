@@ -4,7 +4,8 @@ import { useForm } from "react-hook-form";
 
 
 const ContactMe = () => {
-    const {register, handleSubmit,errors}   =   useForm();  
+    const [successMessage,setSuccessMessage]    =useState("");
+    const {register, handleSubmit ,errors}   =   useForm();  
    
     const serviceID="service_ID";
     const templateID="template_ID";
@@ -26,15 +27,12 @@ const ContactMe = () => {
         resetting.target.reset()
     }
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const sendEmail = (variables) => {
     
-        emailjs.sendForm('serice_ID', 'template_ID', variables, 'user_vxkbeuVrWtAPE7JWl0sms')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+        emailjs.send('serice_ID', 'template_ID', variables, 'userID')
+          .then(() => {
+    setSuccessMessage("Form sent successfully! I'll contact you as soon as possible.")
+          },).catch(err=> console.error(`something went wrong :( ${err}`))
       }
     
   return (
@@ -59,9 +57,23 @@ const ContactMe = () => {
                 className='form-control'
                 placeholder='Name'
                 name='name'
+                // ref={
+                //     register({
+                //         required:"Please enter your name...",
+                //         maxLength:{
+                //             value:30,
+                //             message:"Wow that's a really long name!, please shorten it to less than 30 characters :)"
+                //         }
+                //     })
+                // }
               />
               <div className='line'></div>
             </div>
+            {/* <span className="error-message">
+
+                {errors.name && errors.name.message}
+
+            </span> */}
             {/* PHONE INPUT */}
             <div className='text-center'>
               <input

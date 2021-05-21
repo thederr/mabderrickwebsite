@@ -53,7 +53,7 @@ const Experience = () => {
           <div className="marker"></div>
           <div className="timeline-content">
             <h3>May 2021</h3>
-            <p>This Website</p>
+            <p>Built this website with Reactjs and Bootstrap. Website is hosted on AWS services</p>
           </div>
         </div>
 
