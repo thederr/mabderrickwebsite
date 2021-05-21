@@ -509,6 +509,8 @@ color: var(--primary-orange);
 outline: 0 !important;
 box-shadow: none !important;
 top:0;
+margin-bottom: 1rem;
+padding-left: 0 !important;
 }
 
 
@@ -523,7 +525,7 @@ top:0;
 }
 
 .contacts textarea{
-  height: 12.4rem !important;
+  height: 12.2rem !important;
 }
 
 .contact-btn {
@@ -531,6 +533,39 @@ top:0;
   width: 100%;
   background: none;
   text-transform: uppercase;
-  border: 1rem;
-  
+  border: 1rem; 
+}
+
+.line {
+position: relative;
+width: 0;
+height: 00.125rem;
+background: var(--primary-orange);
+display: inline-block;
+top:-0.8rem;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.7s ease-in-out;
+}
+
+input.form-control {
+  margin:-0.3rem;
+}
+textarea.form-control {
+  margin:-0.3rem;
+}
+/* MEDIA */
+@media(max-width: 768px){
+.contacts{
+   overflow-x: hidden; /* This removes the scroll bar */
+}
+
+.contacts .container{
+  padding:0rem;
+}
+.contacts p{
+  padding:0 0.4rem;
+}
 }
