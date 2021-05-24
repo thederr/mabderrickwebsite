@@ -26,9 +26,9 @@ const ContactMe = () => {
     resetting.target.reset();
   };
 
-  const sendEmail = (variables) => {
+  const sendEmail = (serviceID, templateID, variables, userID) => {
     emailjs
-      .send("serice_ID", "template_ID", variables, "userID")
+      .send(serviceID, templateID, variables, userID)
       .then(() => {
         setSuccessMessage(
           "Form sent successfully! I'll contact you as soon as possible."
@@ -45,6 +45,7 @@ const ContactMe = () => {
           Please fill out the form and describe your project needs. I'll contact
           you as soon as possible.
         </p>
+        <span className='success-message'>{successMessage}</span>
       </div>
       <div className='container'>
         {/* ______________________________________________________*/}
@@ -60,8 +61,7 @@ const ContactMe = () => {
                   className='form-control'
                   placeholder='Name'
                   name='name'
-                    ref=
-                  {register({
+                  ref={register({
                     required: "Please enter your name...",
                     maxLength: {
                       value: 30,
@@ -76,8 +76,6 @@ const ContactMe = () => {
                 {errors.name && errors.name.message}
               </span>
 
-
-              
               {/* PHONE INPUT */}
               <div className='text-center'>
                 <input
@@ -86,11 +84,9 @@ const ContactMe = () => {
                   className='form-control'
                   placeholder='Phone Number'
                   name='phone'
-                  ref={
-                    register({
-                      required: "Please add your phone number",
-                    })
-                  }
+                  ref={register({
+                    required: "Please add your phone number",
+                  })}
                 />
                 <div className='line'></div>
               </div>
@@ -106,9 +102,19 @@ const ContactMe = () => {
                   className='form-control'
                   placeholder='Email Address'
                   name='email'
+                  ref={register({
+                    required: "Please add your email",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "invalid email address",
+                    },
+                  })}
                 />
                 <div className='line'></div>
               </div>
+              <span className='error-message'>
+                {errors.email && errors.email.message}
+              </span>
               {/* SUBJECT INPUT */}
               <div className='text-center'>
                 <input
@@ -117,9 +123,15 @@ const ContactMe = () => {
                   className='form-control'
                   placeholder='Subject'
                   name='subject'
+                  ref={register({
+                    required: "You forgot your subject, my guy",
+                  })}
                 />
                 <div className='line'></div>
               </div>
+              <span className='error-message'>
+                {errors.subject && errors.subject.message}
+              </span>
             </div>
 
             <div className='col-md-6 col-xs-12'>
@@ -130,9 +142,16 @@ const ContactMe = () => {
                   type='text'
                   className='form-control'
                   placeholder='Please give a breif description of your project needs'
+                  name='description'
+                  ref={register({
+                    required: "Please give a discrpition of your problems",
+                  })}
                 ></textarea>
                 <div className='line'></div>
               </div>
+              <span className='error-message'>
+                {errors.description && errors.description.message}
+              </span>
               <button className='btn-main-offer contact-btn' type='submit'>
                 contact me
               </button>
