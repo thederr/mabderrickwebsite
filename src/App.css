@@ -10,6 +10,7 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-black: #000000;
+  --primary-green:green;
   --primary-transarent-black:rgba(0,0,0,0.7);
 }
 
@@ -556,6 +557,18 @@ input.form-control {
 textarea.form-control {
   margin:-0.3rem;
 }
+
+.error-message {
+  color:var(--primary-white);
+  background:var(--primary-hover-red);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color:var(--primary-orange)
+}
+
 /* MEDIA */
 @media(max-width: 768px){
 .contacts{
@@ -568,4 +581,26 @@ textarea.form-control {
 .contacts p{
   padding:0 0.4rem;
 }
+}
+
+/* FOOTER */
+.footer{
+  background:var(--primary-black);
+  color:var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p{
+  margin-bottom: 0;
 }
