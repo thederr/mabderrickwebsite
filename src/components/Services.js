@@ -9,7 +9,7 @@ import { faAws } from "@fortawesome/free-brands-svg-icons";
 
 function Services() {
   return (
-    <div className='services'>
+    <div id="services" className='services'>
       <div className='py-5'>
         <h1>My Services</h1>
         <div className='container'>

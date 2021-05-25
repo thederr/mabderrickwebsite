@@ -2,7 +2,7 @@ import React from "react";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 const Testimonials = () => {
   return (
-    <div className='testimonials'>
+    <div id="testimonials" className='testimonials'>
       <h1>Good Things Said</h1>
       <div className='container'>
         <div className='testimonials-content'>

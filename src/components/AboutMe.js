@@ -2,7 +2,7 @@ import React from "react";
 import author from "./derrick.png";
 const AboutMe = () => {
   return (
-    <div className='container py-5'>
+    <div id="about" className='container py-5'>
       <div className='row'>
         <div className='col-lg col-xm-12'>
           <div className='photo-wrap mb-5'>
