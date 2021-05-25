@@ -545,7 +545,8 @@ width: 0;
 height: 00.125rem;
 background: var(--primary-orange);
 display: inline-block;
-top:-0.8rem;
+top:-.9rem;
+left: -.2rem;
 }
 
 input:focus+.line, textarea:focus+.line {
