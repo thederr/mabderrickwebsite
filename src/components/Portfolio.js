@@ -2,6 +2,8 @@ import React from "react";
 import netflix from "./netflix.PNG";
 import disneyplus from "./disney-plus.PNG";
 import instagram from "./instagram-clone.png";
+import tesla from "./NotTesla.png";
+
 // FONT AWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +13,51 @@ import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
+//-------------------------------------------------------------------------------
+
+ //Tesla Clone 
+ const openPopupboxTesla = () => {
+    
+  const content = (
+    <>
+      <img className='portfolio-image-popupbox' src={tesla} alt='Instagram Project'
+      />
+      <p>A Better Displayed Tesla Website Clone - Frontend Only<br/>
+        This project was about building on my knowledge of react, learning how to better use components and more importanly learning some cool 
+        skills such as react redux, stlyed components, and react reveal.
+        
+
+      </p>
+      {/* link to demo site <strong>Demo:</strong> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a> */}
+      <br />
+      <strong>GitHub:</strong>{" "}
+      <a
+        className='hyper-link'
+        onClick={() => window.open("https://github.com/thederr/tesla-clone", "_blank")}
+      >
+        https://github.com/thederr/tesla-clone<br/>
+      </a>
+    </>
+  );
+
+  PopupboxManager.open({ content });
+  PopupboxManager.update({
+    content,
+    config: {
+      titleBar: {
+        enable: true,
+        text: "Tesla Clone Project",
+      },
+      fadeIn: true,
+      fadeInSpeed: 500,
+    }
+  });
+};
+//-------------------------End Tesla-----------------
+
+//-------------------------------------------------------------------------------
+
+
 //-------------------------------------------------------------------------------
 
  //Instagram
@@ -133,6 +180,8 @@ const Portfolio = () => {
       <div className='container'>
         <h1 className='text-uppercase text-center py-5'>portfolio</h1>
         <h3 className='text-uppercase text-center py-5'>completed projects</h3>
+
+
         <div className='image-box-wrapper row justify-content-center'>
           
           {/*Instagram*/}
@@ -140,14 +189,33 @@ const Portfolio = () => {
             <img
               className='portfolio-image'
               src={instagram}
-              alt='netflix clone'
+              alt='instagram clone'
             />
             <div className='overflow'></div>
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
           {/* End of Instagram */} 
+
+          {/* Tesla*/}
+          <div className='portfolio-image-box' onClick={openPopupboxTesla}>
+            <img
+              className='portfolio-image'
+              src={tesla}
+              alt='tesla clone'
+            />
+            <div className='overflow'></div>
+            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+          </div>
+          {/* End of Tesla */} 
+
+
         </div>
+
+
+
+
         <h3 className='text-uppercase text-center py-5'>upcoming projects</h3>
+
 
         <div className='image-box-wrapper row justify-content-center'>
           {/*Netflix*/}
@@ -161,8 +229,9 @@ const Portfolio = () => {
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
           {/* End of Netflix */}
-
           {/*Disney Plus*/}
+
+          
           <div className='portfolio-image-box'onClick={openPopupboxDisneyPlus}>
             <img
               className='portfolio-image'
@@ -174,6 +243,8 @@ const Portfolio = () => {
           </div>
           {/* End of Disney Plus */}
         </div>
+
+
       </div>
       <PopupboxContainer />
 

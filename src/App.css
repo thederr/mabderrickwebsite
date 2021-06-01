@@ -463,7 +463,7 @@ nav ul li {
 .carousel .slide{
   background:transparent !important;
   height: 100%;
-  padding: top 2remS ;
+  padding: top 2rem ;
 }
 .carousel .slide img{
   width: 10rem !important;

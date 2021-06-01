@@ -19,32 +19,31 @@ const TestimonialsCarousel = () => {
       <>
         <img src={avatar1} alt='Johnnyboy' />
         <div className='mycarousel'>
-          <h3>Johnnyboy</h3>
-          <p> Wow these Software Factory peeps don't commit any code</p>
+          <h3>Mack</h3>
+          <p>If there was noone else to do the project I might hire him</p>
         </div>
       </>
       <>
         <img src={avatar2} alt='Joline' />
         <div className='mycarousel'>
           <h3>Joline</h3>
-          <p>" I would rather have Derrick"</p>
+          <p>"5/10 I would think about hiring him again"</p>
         </div>
       </>
       <>
         <img src={avatar3} alt='Taco' />
         <div className='mycarousel'>
-          <h3>Taco</h3>
+          <h3>Josh</h3>
           <p>
-            {" "}
-            "Dude, I would rather have your brother, at least he would try."
+            "Not the best, but at least he commits some code every once in a while
           </p>
         </div>
       </>
       <>
         <img src={avatar4} alt='Oliver' />
         <div className='mycarousel'>
-          <h3>Oliver the Weinerdog</h3>
-          <p> Bark Bark Bark BARKBARKBARK barkyied bark bark ruff</p>
+          <h3>Oliver</h3>
+          <p>He literally walked in to my offce, told me he was bailing on the proejct, and gave me a used starbucks coupon like that was going to fix it.</p>
         </div>
       </>
     </Carousel>
