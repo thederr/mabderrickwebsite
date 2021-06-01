@@ -7,11 +7,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faAws } from "@fortawesome/free-brands-svg-icons";
 
-function Services() {
+function Interests() {
   return (
-    <div id="services" className='services'>
+    <div id="interests" className='services'>
       <div className='py-5'>
-        <h1>My Services</h1>
+        <h1>My interests</h1>
+        <p></p>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-3 col-md-6 col-sm-6'>
@@ -26,9 +27,7 @@ function Services() {
 
                 <h3>Web Development</h3>
                 <p>
-                  Utilizing the latest technologies: a Reactjs with Firebase and
-                  Amazon Web Services, we build Full Stack Applications that
-                  scale from 1 to 10 million users
+                  Utilizing Reactjs with Firebase I've been able to focus more on the UI side of things; however, it's my intention to, after finishing the website clones in Reactjs and Firebase, to rebuild them in Reactjs, Java, and AWS
                 </p>
               </div>
             </div>
@@ -45,9 +44,7 @@ function Services() {
                 <h3>Web Design</h3>
                 <p>
                   Working with Bootstrap, Material-UI, FontAwesome and the like,
-                  we make sure your website not only keeps up with the times,
-                  but it's ready for every sized screen for every sized mobile,
-                  laptop, and desktop size.
+                 have not only made the web design aspect of it more fun and engaging, but easily adds a level of professionalism that I find very enjoyable. 
                 </p>
               </div>
             </div>
@@ -57,11 +54,9 @@ function Services() {
                 <div className='circle'>
                   <FontAwesomeIcon className='icon' icon={faAws} size='2x' />
                 </div>
-                <h3>AWS Migration</h3>
+                <h3>AWS</h3>
                 <p>
-                  Working with small to medium sized companies offloading costly
-                  infastrcture and replacing inhouse servers with serverless
-                  archtecture from Amazon.
+                AWS was what spurred this whole pivot towards the technology industry. I never really understood the idea of the "cloud" and the fact that I never really knew how these services worked made me feel antiquated. I'm currently trekking through an AWS course on SimpliLearn and hope to get my AWS certifications after I complete it.  
                 </p>
               </div>
             </div>
@@ -77,8 +72,7 @@ function Services() {
                 </div>
                 <h3>AutoCAD Modeling</h3>
                 <p>
-                  Freelance AutoCAD servces are avalible upon request. Here are
-                  a few projects I've worked on over the years.
+              I started my career with a trimble GPS unit and an AutoCAD license. It never ceases to be both fun and rewarding program to work with. From: deliniating blast faces, undulations in pit floors, 3D geolocated postions of drillholes, to: quality assurance, post blast troubleshooting, and even now to my as-builts, hydrologic modeling, and 3D modeling of strategic coal seam intersections, the things I can do with AutoCAD always keeps me interested 
                 </p>
               </div>
             </div>
@@ -89,7 +83,7 @@ function Services() {
   );
 }
 
-export default Services;
+export default Interests;
 
 
   /* Heres Some Example FontAwesome Syntax

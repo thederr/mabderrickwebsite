@@ -78,7 +78,6 @@ nav ul li {
   background-size: cover;
   background-position: center;
   height: 100vh;
-
 }
 .main-info {
   display: flex;
@@ -99,7 +98,9 @@ nav ul li {
   color: var(--primary-orange);
   text-transform: uppercase;
 }
-
+#bidenwuote{
+  color:primary;
+}
 /* TYPED-TEXT */
 
 .typed-text {

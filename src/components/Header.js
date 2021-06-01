@@ -4,14 +4,17 @@ const Header = () => {
   return (
     <div id="home" className='header-wrapper'>
       <div className='main-info'>
-        <h1>web development + autocad drafting</h1>
+        <h1>Web Design & Web Development</h1>
+        <h4 className="text-primary"></h4>
+        <h3 className="text-muted"></h3>
         <Typed
-          className='typed-text'
+          className='typed-text text-muted'
           strings={[
-            "Web Design",
-            "Web Development",
-            "Google Data Studio",
-            "AutoCAD Drafting",
+            "Reactjs",
+            "Firebase",
+            "AWS",
+            "Bootstrap",
+
             "Mediocre At Best Technologies LLC",
           ]}
           typeSpeed={40}
