@@ -26,6 +26,7 @@ const Footer = () => {
             <p>MABtechnologies@MAB.ninja</p>
           </div>
         </div>
+{/* 
         <div className=' col-lg-3 col-md-2 col-sm-6'>
           <div className='row'>
             <div className='col'>
@@ -44,6 +45,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+         */}
         <div className='col-lg-5 col-md-5 col-sm-6 align-items-center'>
           <div className='d-flex justify-content-center'>
             <LinkedinShareButton
