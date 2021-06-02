@@ -31,12 +31,10 @@ const Portfolio = () => {
       {/* link to demo site <strong>Demo:</strong> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a> */}
       <br />
       <strong>GitHub:</strong>{" "}
-      <a
+      <a href="/#"
         className='hyper-link'
         onClick={() => window.open("https://github.com/thederr/tesla-clone", "_blank")}
-      >
-        https://github.com/thederr/tesla-clone<br/>
-      </a>
+      >https://github.com/thederr/tesla-clone</a>
     </>
   );
 
@@ -75,7 +73,7 @@ const Portfolio = () => {
       {/* link to demo site <strong>Demo:</strong> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a> */}
       <br />
       <strong>GitHub:</strong>{" "}
-      <a
+      <a href="/#"
         className='hyper-link'
         onClick={() => window.open("https://github.com/thederr/instagram-clone", "_blank")}
       >
@@ -112,7 +110,7 @@ const Portfolio = () => {
         {/* link to demo site <strong>Demo:</strong> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a> */}
         <br />
         <strong>GitHub:</strong>{" "}
-        <a
+        <a href="/#"
           className='hyper-link'
           onClick={() => window.open("https://github.com/thederr", "_blank")}
         >
@@ -148,7 +146,7 @@ const Portfolio = () => {
         {/* link to demo site <strong>Demo:</strong> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a> */}
         <br />
         <strong>GitHub:</strong>{" "}
-        <a
+        <a href="/#"
           className='hyper-link'
           onClick={() => window.open("https://github.com/thederr", "_blank")}
         >

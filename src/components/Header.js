@@ -4,9 +4,7 @@ const Header = () => {
   return (
     <div id="home" className='header-wrapper'>
       <div className='main-info'>
-        <h1>Web Design & Web Development</h1>
-        <h4 className="text-primary"></h4>
-        <h3 className="text-muted"></h3>
+        <h1>Web Design + Web Development</h1>
         <Typed
           className='typed-text text-muted'
           strings={[

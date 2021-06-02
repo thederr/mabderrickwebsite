@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-dark fixed-top' >
       <div className='container'>
-        <a className='navbar-brand' href='#'>
+        <Link offset={0} smooth={true} to="home" className='navbar-brand' href='#'>
           <img className='logo' src={logo} alt='logo' />
-        </a>
+        </Link>
         <button 
           className='navbar-toggler'
           type='button'

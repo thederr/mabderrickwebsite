@@ -2,7 +2,7 @@ import React from "react";
 import author from "./derrick.png";
 const AboutMe = () => {
   return (
-    <div id='about' className='container py-5'>
+    <div id='about' className='container'>
       <div className='row'>
         <div className='col-lg-6 col-xs-12'>
           <div className='photo-wrap mb-5'>
@@ -11,7 +11,7 @@ const AboutMe = () => {
         </div>
         <div className='col-lg-6 col-xm-12'></div>
         <h1 className='about-heading'>about me</h1>
-        <p>
+        <p id="about-me-paragraph">
         "...Anybody who can throw coal into a furnace can learn how to program, for God’s sake!” - Joe Biden  <br /><br />
           My name is Derrick. I am a mining engineer who enjoys learning about new technologies such as GPS systems, machine control, 
           3D modeling software; however, I've recently become interested in web development with Reactjs. <br/>

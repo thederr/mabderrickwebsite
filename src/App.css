@@ -57,6 +57,7 @@ nav ul li {
 @media screen and (max-width: 786px) {
   .navbar-brand {
     width: 7rem;
+
   }
 
 }
@@ -148,6 +149,10 @@ nav ul li {
 
 /* ABOUT ME */
 
+#about-me-paragraph{
+  padding: 10%;
+}
+
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -167,7 +172,8 @@ nav ul li {
 }
 
 
-@media (max-width: 468px) {
+
+@media(max-width: 468px) {
   .profile-img {
     width: 10rem;
   }
@@ -482,6 +488,10 @@ nav ul li {
 .contacts{
   background:var(--primary-dark);
   padding: 3rem 0;
+}
+
+#contacts{
+  padding: 10%;
 }
 
 .contacts h1{
