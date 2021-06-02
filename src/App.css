@@ -24,7 +24,7 @@ nav {
   z-index: 2;
 }
 .logo {
-  width: 16.25rem;
+  width: 16rem;
 }
 
 /* LINKS */
@@ -52,15 +52,13 @@ nav ul li {
 .navbar-brand {
   max-width: 17.25rem;
   padding:0;
-  height: 6rem;
+  height: 6rem !important;
 }
 @media screen and (max-width: 786px) {
   .navbar-brand {
     width: 7rem;
   }
-  .logo {
-    height: 100%;
-  }
+
 }
 
 .navbar-nav > li > a.active,
@@ -98,9 +96,7 @@ nav ul li {
   color: var(--primary-orange);
   text-transform: uppercase;
 }
-#bidenwuote{
-  color:primary;
-}
+
 /* TYPED-TEXT */
 
 .typed-text {

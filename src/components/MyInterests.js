@@ -70,9 +70,9 @@ function Interests() {
                     size='2x'
                   />
                 </div>
-                <h3>AutoCAD Modeling</h3>
+                <h3>Web Scraping and AWS Rekognition</h3>
                 <p>
-              I started my career with a trimble GPS unit and an AutoCAD license. It never ceases to be both fun and rewarding program to work with. From: deliniating blast faces, undulations in pit floors, 3D geolocated postions of drillholes, to: quality assurance, post blast troubleshooting, and even now to my as-builts, hydrologic modeling, and 3D modeling of strategic coal seam intersections, the things I can do with AutoCAD always keeps me interested 
+               I mean it will take me a few months to figure out how it all works, but biometrics is insanely interesting to me.
                 </p>
               </div>
             </div>
